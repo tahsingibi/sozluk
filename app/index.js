@@ -1,10 +1,5 @@
-import { Text, View } from 'react-native';
+import HomeView from '../src/views/home';
 
 export default function Page() {
-  return (
-    <View>
-      <Text className="text-4xl font-bold">Hello World</Text>
-      <Text className="text-xl">Expo & ExpoRouter & TailwindCSS Starter.</Text>
-    </View>
-  );
+  return <HomeView />;
 }

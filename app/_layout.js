@@ -1,12 +1,14 @@
-import { SafeAreaView, ScrollView, Text } from 'react-native';
 import { Slot } from 'expo-router';
+import { SafeAreaView, ScrollView } from 'react-native';
+import Navbar from '../src/components/ui/navbar';
 
 export default function MainLayout() {
   return (
-    <ScrollView className="p-6">
-      <SafeAreaView className="flex-1 h-screen justify-center">
+    <SafeAreaView className="flex-1 h-screen bg-zinc-50">
+      <ScrollView className="p-6 bg-zinc-100">
         <Slot />
-      </SafeAreaView>
-    </ScrollView>
+      </ScrollView>
+      <Navbar />
+    </SafeAreaView>
   );
 }
